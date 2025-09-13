@@ -1,0 +1,17 @@
+[package]
+name = "polygon-arb-bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["siziya"]
+description = "A Polygon arbitrage opportunity detector bot in Rust"
+
+[dependencies]
+ethers = { version = "2.0", features = ["abigen", "contract", "providers", "tokio-runtime"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+rusqlite = { version = "0.31", features = ["bundled"] }
+log = "0.4"
+env_logger = "0.10"
+anyhow = "1.0"
